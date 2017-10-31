@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+     
+    int v[100002],n,m;
+        cin>>n>>m;
+    for(int i = 1;i<=n;i++)
+        v[i-1]=i;
+    int pntr=0;
+    while(n>3)
+    {
+        pntr=(pntr+m-1)%n;
+        for(int i = pntr;i<n;i++)
+            v[i]=v[i+1];
+        n--;
+    }
+    cout<<v[0]<<" "<<v[1]<<" "<<v[2]<<endl;
+    return 0;
+
+}
