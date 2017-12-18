@@ -1,15 +1,17 @@
 #include <iostream>
+
 using namespace std;
+
 int main()
 {
-    int n,a[1000000],x=0;
-    cin>>n;
-    for(int i = 0;i<n;i++)
-    {
-        cin>>a[i];
-        if(a[i]>x)
-        x=a[i];  
-    }
-    cout<<x;
-    return 0;
+     int a,n,x=0;
+ cin>>n;
+ for(int i = 0;i<n;i++)
+ {
+     cin>>a;
+     if(a>x)
+     x=a;
+ }
+ cout<<x;
+ return 0;
 }
